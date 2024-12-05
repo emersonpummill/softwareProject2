@@ -23,4 +23,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python test_csv_validation.py
+        python tests.py
