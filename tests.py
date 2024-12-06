@@ -37,5 +37,4 @@ elif borderFlag == 0:
     sys.exit(1)
 else:
     print(f"\nThere are {goatFlag} goat collisions and {borderFlag} border collisions in this data\n")
-
-
+    sys.exit(1)
