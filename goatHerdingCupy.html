@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module goatHerdingCupy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>goatHerdingCupy</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5C14794%5Cdesktop%5Cfall%20semster%202024%5Csoftware%20engineering%5Cproject%202%5Cgoatherdingcupy.py">c:\users\14794\desktop\fall semster 2024\software engineering\project 2\goatherdingcupy.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="cupy.html">cupy</a><br>
+<a href="csv.html">csv</a><br>
+</td><td width="25%" valign=top><a href="imageio.html">imageio</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-checkForBorderCollision"><strong>checkForBorderCollision</strong></a>()</dt><dd><tt>#&nbsp;Check&nbsp;for&nbsp;border&nbsp;collisions&nbsp;and&nbsp;exit&nbsp;position</tt></dd></dl>
+ <dl><dt><a name="-checkForGoatCollision"><strong>checkForGoatCollision</strong></a>()</dt><dd><tt>#&nbsp;Check&nbsp;for&nbsp;goat&nbsp;collisions</tt></dd></dl>
+ <dl><dt><a name="-formatList"><strong>formatList</strong></a>()</dt><dd><tt>#&nbsp;Add&nbsp;list&nbsp;of&nbsp;goat&nbsp;positions&nbsp;to&nbsp;CSV</tt></dd></dl>
+ <dl><dt><a name="-move"><strong>move</strong></a>()</dt><dd><tt>#&nbsp;Move&nbsp;each&nbsp;goat&nbsp;one&nbsp;unit&nbsp;in&nbsp;any&nbsp;direction</tt></dd></dl>
+ <dl><dt><a name="-updatePlot"><strong>updatePlot</strong></a>()</dt><dd><tt>#&nbsp;Update&nbsp;figure&nbsp;and&nbsp;axes</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__warningregistry__</strong> = {'version': 71}<br>
+<strong>count</strong> = 352<br>
+<strong>csvfile</strong> = &lt;_io.TextIOWrapper name='movement.csv' mode='w' encoding='cp1252'&gt;<br>
+<strong>dur</strong> = 10<br>
+<strong>edge</strong> = 5<br>
+<strong>edgeSide</strong> = 0<br>
+<strong>exitPos</strong> = [5, 2]<br>
+<strong>filename</strong> = 'frame_352.png'<br>
+<strong>filenames</strong> = ['frame_0.png', 'frame_1.png', 'frame_2.png', 'frame_3.png', 'frame_4.png', 'frame_5.png', 'frame_6.png', 'frame_7.png', 'frame_8.png', 'frame_9.png', 'frame_10.png', 'frame_11.png', 'frame_12.png', 'frame_13.png', 'frame_14.png', 'frame_15.png', 'frame_16.png', 'frame_17.png', 'frame_18.png', 'frame_19.png', ...]<br>
+<strong>finalGoats</strong> = array([[-1, -1],
+       [-1, -1],
+       [-1, -1...     [-1, -1],
+       [-1, -1],
+       [-1, -1]])<br>
+<strong>goats</strong> = array([[-1, -1],
+       [-1, -1],
+       [-1, -1...     [-1, -1],
+       [-1, -1],
+       [-1, -1]])<br>
+<strong>goatsRemaining</strong> = 0<br>
+<strong>grid</strong> = [[0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [3, 0], [3, 1], ...]<br>
+<strong>gridSize</strong> = 6<br>
+<strong>i</strong> = 9<br>
+<strong>images</strong> = [array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), array([[[255, 255, 255, 255],
+        [255, 255,...55],
+        [255, 255, 255, 255]]], dtype=uint8), ...]<br>
+<strong>j</strong> = 5<br>
+<strong>labels</strong> = ['Goat 0', 'Goat 1', 'Goat 2', 'Goat 3', 'Goat 4', 'Goat 5', 'Goat 6', 'Goat 7', 'Goat 8', 'Goat 9']<br>
+<strong>numGoats</strong> = 10<br>
+<strong>pos</strong> = [2, 3]<br>
+<strong>tempGoats</strong> = array([[-1, -1],
+       [-1, -1],
+       [-1, -1...     [-1, -1],
+       [-1, -1],
+       [-1, -1]])<br>
+<strong>writer</strong> = &lt;_csv.writer object&gt;</td></tr></table>
+</body></html>
