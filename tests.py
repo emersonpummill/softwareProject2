@@ -1,7 +1,8 @@
 import csv
+import sys
 
 data = []
-gridSize = 13
+gridSize = 6
 
 badData = [['(1,2)', '(1,1)', '(2,1)'], ['(1,2)', '(1,1)', '(1,1)'], ['(2,2)', '(0,1)', '(2,1)'], 
            ['X', '(1,1)', '(2,3)'], ['X', '(1,1)', '(2,1)'], ['X', '(1,1)', '(2,1)'], ['X', '(2,1)', '(2,1)']]
@@ -30,8 +31,11 @@ if goatFlag == 0 and borderFlag == 0:
     print("\nThere are no goat or border collisions in this data!\n")
 elif goatFlag == 0:
     print(f"\nThere are {borderFlag} border collisions in this data\n")
+    sys.exit(1)
 elif borderFlag == 0:
     print(f"\nThere are {goatFlag} goat collisions in this data\n")
+    sys.exit(1)
 else:
     print(f"\nThere are {goatFlag} goat collisions and {borderFlag} border collisions in this data\n")
+
 
