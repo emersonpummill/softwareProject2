@@ -15,7 +15,7 @@ data.pop(0)
 
 goatFlag = 0
 borderFlag = 0
-for row in badData:
+for row in data:
     row = [x for x in row if x != 'X']
     diff = len(row) - len(set(row))
     if diff > 0:
