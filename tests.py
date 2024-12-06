@@ -1,3 +1,5 @@
+''' Because of the string nature of the data input, this test only runs for gridsizes of 9x9 or less'''
+
 import csv
 import sys
 
